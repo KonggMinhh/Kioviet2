@@ -1,0 +1,22 @@
+%#{$class-prefix}spacer,
+.#{$class-prefix}spacer {
+    --#{$var-prefix}spacer-gap: var(--#{$var-prefix}spacer-md);
+    gap: var(--#{$var-prefix}spacer-gap);
+    display: inline-flex;
+    flex-wrap: wrap;
+    &-vertical {
+        flex-direction: column;
+    }
+    @each $spacer, $value in $spacers {
+        &-#{$spacer} {
+            --#{$var-prefix}spacer-gap: var(--#{$var-prefix}spacer-#{$spacer});
+        }
+    }
+}
+%#{$class-prefix}line-clamp,
+.#{$class-prefix}line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
