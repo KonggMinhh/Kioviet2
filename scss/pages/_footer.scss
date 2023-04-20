@@ -15,15 +15,16 @@
         background: rgba(14, 50, 82, 0.88);
         z-index: 0;
     }
+
     &__heading {
         color: $green;
         margin-bottom: 24px;
-        font-weight: $font-weight-semibold;
+        font-weight: 600;
         font-size: 1.8rem;
         line-height: 27px;
     }
     &-item {
-        color: $white;
+        flex: 1;
     }
     &-list {
         padding: 0;
@@ -31,7 +32,7 @@
         list-style: none;
         & a:hover,
         &:focus {
-            color: $link-color;
+            color: #237fcd;
         }
     }
     &-link {
@@ -44,16 +45,17 @@
     }
     &__desc {
         color: $green;
-        font-weight: $font-weight-semibold;
+        font-weight: 600;
         font-size: 1.5rem;
         margin: 24px 0 0;
     }
     &__phone {
         @extend .footer-link-email;
+        font-weight: 600;
         font-size: 2.2rem;
         &:hover,
         &:focus {
-            color: $link-color;
+            color: #237fcd;
         }
     }
     &-address {
@@ -63,13 +65,13 @@
         color: $white;
         font-size: 1.3rem;
         &:first-child {
-            font-weight: $font-weight-bold;
+            font-weight: 700;
         }
     }
     &-hotline {
-        color: $link-color;
+        color: #00a3ff;
         &:focus {
-            color: $link-color;
+            color: #237fcd;
         }
     }
     // copy
@@ -83,7 +85,7 @@
     }
 
     &__year {
-        font-weight: $font-weight-semibold;
+        font-weight: 600;
         font-size: 1.3rem;
         color: rgba(234, 234, 234, 0.6);
         margin-right: 28px;
@@ -106,6 +108,17 @@
         margin-left: auto;
     }
 }
+.img-round {
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+// Mobile
 @include media-breakpoint-down(sm) {
     .footer {
         &-content {

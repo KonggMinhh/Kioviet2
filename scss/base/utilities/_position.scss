@@ -22,8 +22,3 @@
     @include position(absolute, 50%, n, n, 0);
     transform: translateY(-50%);
 }
-%#{$class-prefix}position-relative,
-.#{$class-prefix}position-relative {
-    @include position(relative);
-    
-} 

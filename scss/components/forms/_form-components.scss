@@ -12,20 +12,15 @@
     }
     .#{$class-prefix}col-form-control-plaintext {
         .#{$class-prefix}tag {
-            margin-top: calc(
-                -1 * (
-                        var(--#{$var-prefix}tag-height) -
-                            var(--#{$var-prefix}input-line-height)
-                    ) / 2
-            );
+            margin-top: calc(-1 *(var(--#{$var-prefix}tag-height) -  var(--#{$var-prefix}input-line-height)) / 2);
         }
     }
 }
 
 .#{$class-prefix}form-row-sm {
+
     .#{$class-prefix}col-form-label {
-        --#{$var-prefix}input-padding-y: #{$input-padding-y-sm +
-            $input-border-width};
+        --#{$var-prefix}input-padding-y: #{$input-padding-y-sm + $input-border-width};
     }
 
     .#{$class-prefix}col-form-control .#{$class-prefix}form-control,
@@ -42,9 +37,9 @@
 }
 
 .#{$class-prefix}form-row-lg {
+
     .#{$class-prefix}col-form-label {
-        --#{$var-prefix}input-padding-y: #{$input-padding-y-lg +
-            $input-border-width};
+        --#{$var-prefix}input-padding-y: #{$input-padding-y-lg + $input-border-width};
     }
 
     .#{$class-prefix}col-form-control .#{$class-prefix}form-control,
@@ -59,7 +54,7 @@
 .#{$class-prefix}form-group-inline {
     @extend %flex;
     align-items: flex-start;
-    > .form-group-row {
+    >.form-group-row {
         flex: 1;
     }
 }
@@ -72,7 +67,7 @@
     color: var(--#{$var-prefix}icon-mask-color);
     font-size: var(--#{$var-prefix}icon-size);
     text-align: center;
-    @include box-size(var(--#{$var-prefix}icon-size));
+    @include box-size(var(--#{$var-prefix}icon-size));    
 }
 .icon-mask {
     @extend %icon-mask;
@@ -84,93 +79,10 @@
     }
 }
 
-.form-icon-lg {
-    --width: 72px;
-    --height: 72px;
-    width: var(--width);
-    height: var(--height);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 999px;
-    margin: 0 auto;
-}
-.form-icon-sm {
-    --width: 60px;
-    --height: 60px;
-    @extend .form-icon-lg;
-}
-.form-icon {
-    --width: 40px;
-    --height: 40px;
-    @extend .form-icon-lg;
-}
-// -----------form img---------------------------------
-.img-form-md {
-    --width: 140px;
-    --height: 140px;
-    position: relative;
-    display: block;
-    flex: 1;
-    flex-basis: 100%;
-    max-width: var(--width);
-    height: var(--height);
-    background-clip: padding-box;
-    overflow: hidden;
-    border: 1px solid #e5e5e5;
-    background: #c4c4c4;
-    border-radius: 10px;
-}
-.img-form-qr {
-    @extend .img-form-md;
-    --width: 150px;
-    --height: 150px;
-    border-radius: 8px;
-    margin: 0 auto 16px;
-    box-shadow: 0 4px 32px rgba(47, 116, 47, 0.25);
-    border: 1px solid #e5e5e5;
-}
-.img-form-sm {
-    @extend .img-form-md;
-    --width: 89px;
-    --height: 89px;
-    margin: 0 auto;
-}
-.img-form-lg {
-    @extend .img-form-md;
-    --width: 175px;
-    --height: 94px;
-    min-width: var(--width);
-}
-.img-form-xl {
-    @extend .img-form-md;
-    --width: 380px;
-    --height: 202px;
-    max-width: 100%;
-}
-.img-round {
-    width: 24px;
-    height: 24px;
-    background: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin-right: 8px;
-}
-.img-thumb {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 //----- form-labels -----------------------------------
 // Giá trị từ [80 -> 200]
 [class*="form-labels-"] {
-    .#{$class-prefix}col-form-label {
+    .#{$class-prefix}col-form-label {        
         flex: 0 0 var(--#{$var-prefix}label-width);
         max-width: var(--#{$var-prefix}label-width);
     }
@@ -183,32 +95,21 @@
 
 @each $space in $form-labels-width {
     .#{$class-prefix}form-labels-#{$space} {
-        --#{$var-prefix}label-width: #{$space * 0.1 + "rem"};
+        --#{$var-prefix}label-width: #{$space*0.1 + "rem"};
     }
 }
-// @each $space in $form-labels-width {
-//     .#{$class-prefix}form-labels-#{$space} {
-//         --#{$var-prefix}label-width: #{$space  + "px"};
-//         --#{$var-prefix}label-height: #{$space  + "px"};
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         border-radius: 999px;
-//         margin: 0 auto;
-//     }
-// }
 
 //----- form-output -----------------------------------
 // Giá trị từ [50 -> 100]
 [class*="form-controls-"] {
-    .#{$class-prefix}col-form-label {
-        flex: 1 1 auto;
+    .#{$class-prefix}col-form-label {        
+        flex: 1 1 auto; 
     }
     .#{$class-prefix}col-form-control,
     .#{$class-prefix}form-control-plaintext {
         flex: 0 0 var(--#{$var-prefix}form-control-width);
-        max-width: var(--#{$var-prefix}form-control-width);
-    }
+        max-width: var(--#{$var-prefix}form-control-width);        
+    }    
 }
 @for $i from 5 through 10 {
     .#{$class-prefix}form-controls-#{$i*10} {
@@ -224,9 +125,9 @@
     align-items: stretch;
     width: 100%;
 
-    > .#{$class-prefix}group-component,
-    > .#{$class-prefix}form-control,
-    > .#{$class-prefix}form-control-wrapper {
+    >.#{$class-prefix}group-component,
+    >.#{$class-prefix}form-control,
+    >.#{$class-prefix}form-control-wrapper {
         position: relative;
         flex: 1 1 auto;
         width: 1%;
@@ -239,43 +140,43 @@
         &:active,
         &.is-active {
             z-index: $zindex-middle;
+        }       
+    }
+       > * + .#{$class-prefix}group-component,
+       > * + .#{$class-prefix}btn,
+       > * + .#{$class-prefix}input-group-text,
+       > * + .#{$class-prefix}form-control,
+       > * + .#{$class-prefix}form-control-wrapper {
+            margin-left: -$input-border-width;
         }
-    }
-    > * + .#{$class-prefix}group-component,
-    > * + .#{$class-prefix}btn,
-    > * + .#{$class-prefix}input-group-text,
-    > * + .#{$class-prefix}form-control,
-    > * + .#{$class-prefix}form-control-wrapper {
-        margin-left: -$input-border-width;
-    }
-
+    
     .#{$class-prefix}btn {
         position: relative;
         z-index: $zindex-bottom;
         &:hover,
         &:focus {
-            z-index: $zindex-middle;
+          z-index: $zindex-middle;
         }
+      }
+
+    >:first-child:not(:last-child) {
+        @include border-right-radius(0)
     }
 
-    > :first-child:not(:last-child) {
-        @include border-right-radius(0);
+    >:last-child:not(:first-child) {
+        @include border-left-radius(0)
     }
 
-    > :last-child:not(:first-child) {
-        @include border-left-radius(0);
-    }
-
-    > :not(:first-child):not(:last-child) {
-        @include border-radius(0);
-    }
+    >:not(:first-child):not(:last-child) {
+        @include border-radius(0)
+    }    
 }
 
 .#{$class-prefix}input-group-text {
     @extend %form-control;
     width: auto;
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 
 .#{$class-prefix}form-control-prefix,
@@ -284,7 +185,7 @@
     align-items: center;
 }
 
-.#{$class-prefix}form-control-prefix {
+.#{$class-prefix}form-control-prefix {   
     margin-right: var(--#{$var-prefix}spacer-md);
 }
 

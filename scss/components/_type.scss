@@ -1,0 +1,14 @@
+.slider-title {
+    display: block;
+    font-weight: $font-weight-bold;
+    color: var(--#{$prefix}white);
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+}
+.slider-wrap {
+    max-width: 483px;
+}
+.card-heading {
+    text-align: center;
+    margin-bottom: 56px;
+}

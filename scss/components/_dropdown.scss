@@ -100,12 +100,12 @@
         background-color: var(--#{$var-prefix}dropdown-item-active-bg);
     }
     
-    // &::before {
-    //     @extend .far;
-    //     content: "\f00c";
-    //     font-size: var(--#{$var-prefix}icon-size-md);
-    //     @include position(absolute, var(--#{$var-prefix}dropdown-item-padding-y), var(--#{$var-prefix}dropdown-item-padding-x), n, n);
-    // }
+    &::before {
+        @extend .far;
+        content: "\f00c";
+        font-size: var(--#{$var-prefix}icon-size-md);
+        @include position(absolute, var(--#{$var-prefix}dropdown-item-padding-y), var(--#{$var-prefix}dropdown-item-padding-x), n, n);
+    }
 }
 
 //===== Dropdown Class ========================================

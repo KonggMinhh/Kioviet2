@@ -4,729 +4,175 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-        />
         <title>Document</title>
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-        <!-- Header -->
-        <header class="header">
-            <!-- Header-top -->
-            <div class="container">
-                <div class="header-top">
-                    <!-- Logo -->
-                    <a href="/">
+        <header class="header fixed-top">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="container">
+                    <a class="navbar-brand" href="#!">
                         <img
                             class="header-logo"
                             src="./assets/img/KiotViet-Logo-Horizontal.svg"
                             alt="KioViet"
                         />
                     </a>
-                    <!-- Nav -->
-                    <div class="navbar navbar-expand-xl">
-                        <!-- Button -->
-                        <button
-                            class="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarColor03"
-                            aria-controls="navbarColor03"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                        >
-                            <i class="bi bi-list"></i>
-                        </button>
-
-                        <!-- Navigation -->
-                        <nav
-                            class="collapse navbar-collapse"
-                            id="navbarColor03"
-                        >
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#!">Sản phẩm</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link"
-                                        href="#"
-                                        id="navbarDropdown"
-                                        role="button"
-                                        data-bs-toggle="dropdown"
-                                        aria-expanded="false"
-                                    >
-                                        Giải pháp
-                                    </a>
-                                    <div
-                                        hidden
-                                        class="dropdown-menu product-menu"
-                                        aria-labelledby="navbarDropdown"
-                                    >
-                                        <div class="product-wrap">
-                                            <div class="row">
-                                                <div class="col-9 product-left">
-                                                    <h4
-                                                        class="product__heading"
-                                                    >
-                                                        Giải pháp ngành hàng
-                                                    </h4>
-                                                    <div
-                                                        class="row product-solution"
-                                                    >
-                                                        <!-- Product item 1 -->
-                                                        <div class="col-6">
-                                                            <div
-                                                                class="product-list"
-                                                            >
-                                                                <div
-                                                                    class="product-item"
-                                                                >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="career-img__brand"
-                                                                        smform-icon-sm
-                                                                    >
-                                                                        <img
-                                                                            class="icon-career"
-                                                                            src="./assets/icons/36.svg"
-                                                                            alt="icon"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        class="product-link"
-                                                                        href="#!"
-                                                                        >Thời
-                                                                        trang</a
-                                                                    >
-                                                                </div>
-                                                                <div
-                                                                    class="product-item"
-                                                                >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="career-img__brand"
-                                                                        smform-icon-sm
-                                                                    >
-                                                                        <img
-                                                                            class="icon-career"
-                                                                            src="./assets/icons/36.svg"
-                                                                            alt="icon"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        class="product-link"
-                                                                        href="#!"
-                                                                        >Điện
-                                                                        thoại &
-                                                                        Điện
-                                                                        máy</a
-                                                                    >
-                                                                </div>
-                                                                <div
-                                                                    class="product-item"
-                                                                >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="career-img__brand"
-                                                                        smform-icon-sm
-                                                                    >
-                                                                        <img
-                                                                            class="icon-career"
-                                                                            src="./assets/icons/36.svg"
-                                                                            alt="icon"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        class="product-link"
-                                                                        href="#!"
-                                                                        >Nông
-                                                                        sản &
-                                                                        Thực
-                                                                        phẩm</a
-                                                                    >
-                                                                </div>
-                                                                <div
-                                                                    class="product-item"
-                                                                >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="career-img__brand"
-                                                                        smform-icon-sm
-                                                                    >
-                                                                        <img
-                                                                            class="icon-career"
-                                                                            src="./assets/icons/36.svg"
-                                                                            alt="icon"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        class="product-link"
-                                                                        href="#!"
-                                                                        >Xe, Máy
-                                                                        móc &
-                                                                        Linh
-                                                                        kiện sửa
-                                                                        chữa</a
-                                                                    >
-                                                                </div>
-                                                                <div
-                                                                    class="product-item"
-                                                                >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="career-img__brand"
-                                                                        smform-icon-sm
-                                                                    >
-                                                                        <img
-                                                                            class="icon-career"
-                                                                            src="./assets/icons/36.svg"
-                                                                            alt="icon"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        class="product-link"
-                                                                        href="#!"
-                                                                        >Sách &
-                                                                        Văn
-                                                                        phòng
-                                                                        phẩm</a
-                                                                    >
-                                                                </div>
-                                                                <div
-                                                                    class="product-item"
-                                                                >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="career-img__brand"
-                                                                        smform-icon-sm
-                                                                    >
-                                                                        <img
-                                                                            class="icon-career"
-                                                                            src="./assets/icons/36.svg"
-                                                                            alt="icon"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        class="product-link"
-                                                                        href="#!"
-                                                                        >Bar -
-                                                                        Cafe,
-                                                                        Nhà hàng
-                                                                        Karaoke
-                                                                        &
-                                                                        Billiards</a
-                                                                    >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="product-label"
-                                                                        >NEW</a
-                                                                    >
-                                                                </div>
-                                                                <div
-                                                                    class="product-item"
-                                                                >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="career-img__brand"
-                                                                        smform-icon-sm
-                                                                    >
-                                                                        <img
-                                                                            class="icon-career"
-                                                                            src="./assets/icons/36.svg"
-                                                                            alt="icon"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        class="product-link"
-                                                                        href="#!"
-                                                                        >Mỹ
-                                                                        phẩm</a
-                                                                    >
-                                                                </div>
-                                                                <div
-                                                                    class="product-item"
-                                                                >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="career-img__brand"
-                                                                        smform-icon-sm
-                                                                    >
-                                                                        <img
-                                                                            class="icon-career"
-                                                                            src="./assets/icons/36.svg"
-                                                                            alt="icon"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        class="product-link"
-                                                                        href="#!"
-                                                                        >Nhà
-                                                                        thuốc</a
-                                                                    >
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- Product item 2 -->
-                                                        <div class="col-6">
-                                                            <div
-                                                                class="product-list"
-                                                            >
-                                                                <div
-                                                                    class="product-item"
-                                                                >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="career-img__brand"
-                                                                        smform-icon-sm
-                                                                    >
-                                                                        <img
-                                                                            class="icon-career"
-                                                                            src="./assets/icons/36.svg"
-                                                                            alt="icon"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        class="product-link"
-                                                                        href="#!"
-                                                                        >Nội
-                                                                        thất &
-                                                                        Gia
-                                                                        dụng</a
-                                                                    >
-                                                                </div>
-                                                                <div
-                                                                    class="product-item"
-                                                                >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="career-img__brand"
-                                                                        smform-icon-sm
-                                                                    >
-                                                                        <img
-                                                                            class="icon-career"
-                                                                            src="./assets/icons/36.svg"
-                                                                            alt="icon"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        class="product-link"
-                                                                        href="#!"
-                                                                        >Hoa &
-                                                                        Quà
-                                                                        tặng</a
-                                                                    >
-                                                                </div>
-                                                                <div
-                                                                    class="product-item"
-                                                                >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="career-img__brand"
-                                                                        smform-icon-sm
-                                                                    >
-                                                                        <img
-                                                                            class="icon-career"
-                                                                            src="./assets/icons/36.svg"
-                                                                            alt="icon"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        class="product-link"
-                                                                        href="#!"
-                                                                        >Tạp hóa
-                                                                        & Siêu
-                                                                        thị
-                                                                        mini</a
-                                                                    >
-                                                                </div>
-                                                                <div
-                                                                    class="product-item"
-                                                                >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="career-img__brand"
-                                                                        smform-icon-sm
-                                                                    >
-                                                                        <img
-                                                                            class="icon-career"
-                                                                            src="./assets/icons/36.svg"
-                                                                            alt="icon"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        class="product-link"
-                                                                        href="#!"
-                                                                        >Hair
-                                                                        Salon,
-                                                                        Nails,
-                                                                        Massage
-                                                                        & Spa</a
-                                                                    >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="product-label"
-                                                                        >NEW</a
-                                                                    >
-                                                                </div>
-                                                                <div
-                                                                    class="product-item"
-                                                                >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="career-img__brand"
-                                                                        smform-icon-sm
-                                                                    >
-                                                                        <img
-                                                                            class="icon-career"
-                                                                            src="./assets/icons/36.svg"
-                                                                            alt="icon"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        class="product-link"
-                                                                        href="#!"
-                                                                        >Vật
-                                                                        liệu xây
-                                                                        dựng</a
-                                                                    >
-                                                                </div>
-                                                                <div
-                                                                    class="product-item"
-                                                                >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="career-img__brand"
-                                                                        smform-icon-sm
-                                                                    >
-                                                                        <img
-                                                                            class="icon-career"
-                                                                            src="./assets/icons/36.svg"
-                                                                            alt="icon"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        class="product-link"
-                                                                        href="#!"
-                                                                        >Mẹ &
-                                                                        Bé</a
-                                                                    >
-                                                                </div>
-                                                                <div
-                                                                    class="product-item"
-                                                                >
-                                                                    <a
-                                                                        href="#!"
-                                                                        class="career-img__brand"
-                                                                        smform-icon-sm
-                                                                    >
-                                                                        <img
-                                                                            class="icon-career"
-                                                                            src="./assets/icons/36.svg"
-                                                                            alt="icon"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        class="product-link"
-                                                                        href="#!"
-                                                                        >Ngành
-                                                                        hàng
-                                                                        khác</a
-                                                                    >
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="col-3 product-right"
-                                                >
-                                                    <h4
-                                                        class="product__heading"
-                                                    >
-                                                        Giải pháp tiện ích
-                                                    </h4>
-                                                    <div class="product-list">
-                                                        <!-- Item 1 -->
-                                                        <div
-                                                            class="product-item"
-                                                        >
-                                                            <a
-                                                                href="#!"
-                                                                class="product-img"
-                                                            >
-                                                                <img
-                                                                    class="icon-career"
-                                                                    src="./assets/icons/swap.svg"
-                                                                    alt="icon"
-                                                                />
-                                                            </a>
-                                                            <a
-                                                                class="product-link"
-                                                                href="#!"
-                                                                >Đồng bộ sàn
-                                                                TMĐT</a
-                                                            >
-                                                        </div>
-                                                        <!-- Item 2 -->
-                                                        <div
-                                                            class="product-item"
-                                                        >
-                                                            <a
-                                                                href="#!"
-                                                                class="product-img"
-                                                            >
-                                                                <img
-                                                                    class="icon-career"
-                                                                    src="./assets/icons/web.svg"
-                                                                    alt="icon"
-                                                                />
-                                                            </a>
-                                                            <a
-                                                                class="product-link"
-                                                                href="#!"
-                                                                >Tạo website
-                                                                trong 5 phút</a
-                                                            >
-                                                        </div>
-                                                        <!-- Item 3 -->
-                                                        <div
-                                                            class="product-item"
-                                                        >
-                                                            <a
-                                                                href="#!"
-                                                                class="product-img"
-                                                            >
-                                                                <img
-                                                                    class="icon-career"
-                                                                    src="./assets/icons/car.svg"
-                                                                    alt="icon"
-                                                                />
-                                                            </a>
-                                                            <a
-                                                                class="product-link"
-                                                                href="#!"
-                                                                >Vận chuyển dễ
-                                                                dàng</a
-                                                            >
-                                                        </div>
-                                                        <!-- Item 4 -->
-                                                        <div
-                                                            class="product-item"
-                                                        >
-                                                            <a
-                                                                href="#!"
-                                                                class="product-img"
-                                                            >
-                                                                <img
-                                                                    class="icon-career"
-                                                                    src="./assets/icons/fb-blue.svg"
-                                                                    alt="icon"
-                                                                />
-                                                            </a>
-                                                            <a
-                                                                class="product-link"
-                                                                href="#!"
-                                                                >Liên kết bán
-                                                                hàng Facebook</a
-                                                            >
-                                                        </div>
-                                                        <!-- Item 5 -->
-                                                        <div
-                                                            class="product-item"
-                                                        >
-                                                            <a
-                                                                href="#!"
-                                                                class="product-img"
-                                                            >
-                                                                <img
-                                                                    class="icon-career"
-                                                                    src="./assets/icons/device.svg"
-                                                                    alt="icon"
-                                                                />
-                                                            </a>
-                                                            <a
-                                                                class="product-link"
-                                                                href="#!"
-                                                                >Thiết bị bán
-                                                                hàng</a
-                                                            >
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Khách hàng</a>
-                                    <ul hidden class="news-menu">
-                                        <li class="news-item">
-                                            <a href="#!" class="news-link"
-                                                >Khách hàng KiotViet</a
-                                            >
-                                        </li>
-                                        <li class="news-item">
-                                            <a href="#!" class="news-link"
-                                                >Giới thiệu khách hàng</a
-                                            >
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Phí dịch vụ</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Hỗ trợ</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Tin tức</a>
-                                    <ul hidden class="news-menu">
-                                        <li class="news-item">
-                                            <a href="#!" class="news-link"
-                                                >Tin tức</a
-                                            >
-                                        </li>
-                                        <li class="news-item">
-                                            <a href="#!" class="news-link"
-                                                >Kinh nghiệm kinh doanh</a
-                                            >
-                                        </li>
-                                        <li class="news-item">
-                                            <a href="#!" class="news-link"
-                                                >Câu chuyện thành công</a
-                                            >
-                                        </li>
-                                        <li class="news-item">
-                                            <a href="#!" class="news-link"
-                                                >Mẹo hay</a
-                                            >
-                                        </li>
-                                        <li class="news-item">
-                                            <a href="#!" class="news-link"
-                                                >Khuyến mãi</a
-                                            >
-                                        </li>
-                                        <li class="news-item">
-                                            <a href="#!" class="news-link"
-                                                >Tin tức về KiotViet</a
-                                            >
-                                        </li>
-                                        <li class="news-item">
-                                            <a href="#!" class="news-link"
-                                                >Thông tin cập nhật KiotViet</a
-                                            >
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Về KiotViet</a>
-                                </li>
-                            </ul>
-                            <!-- CTA -->
-                            <div class="header__actions">
-                                <button
-                                    type="button"
-                                    class="kv-btn kv-btn-outline-success kv-btn-lg kv-btn-circle"
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll"
+                        aria-controls="navbarScroll"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse justify-content-end"
+                        id="navbarScroll"
+                    >
+                        <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#!">Sản phẩm</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link"
+                                    href="#!"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
                                 >
-                                    Đăng ký
-                                </button>
-                                <button
-                                    type="button"
-                                    class="kv-btn kv-btn-lg kv-btn-success kv-btn-circle"
-                                >
-                                    Đăng nhập
-                                </button>
-                            </div>
-                        </nav>
+                                    Giải pháp
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Khách hàng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Phí dịch vụ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hỗ trợ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tin tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Về KiotViet</a>
+                            </li>
+                        </ul>
+                        <div class="header-actions">
+                            <button
+                                type="button"
+                                class="btn btn-outline-success"
+                            >
+                                Đăng ký
+                            </button>
+                            <button type="button" class="btn btn-success">
+                                Đăng nhập
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </nav>
         </header>
         <main>
             <!-- Slider -->
-            <section class="slider">
-                <div class="container">
-                    <div class="slider__info">
-                        <h1 class="slider__heading">
-                            Phần mềm<br />quản lý bán hàng phổ biến nhất
-                        </h1>
-                        <p class="slider__desc">
-                            Đơn giản, dễ dùng, tiết kiệm chi phí và phù hợp với
-                            tất cả các ngành hàng
-                        </p>
-                    </div>
-                    <div class="slider__wrap">
-                        <!-- CTA -->
-                        <div class="slider__cta">
-                            <button
-                                class="kv-btn kv-btn-success kv-btn-xxl kv-btn-circle slider__btn"
-                            >
-                                Dùng thử miễn phí
-                            </button>
-                            <button
-                                class="kv-btn kv-btn-ghost-gray kv-btn-circle slider__discover"
-                            >
-                                <div class="img-video">
-                                    <img
-                                        class="img-play"
-                                        src="./assets/icons/play.svg"
-                                        alt="play"
-                                    />
-                                </div>
-                                <span class="slider__text"
-                                    >Khám phá KiotViet</span
-                                >
-                            </button>
+            <section class="card-bg-img slider">
+                <img
+                    src="./assets/img/slider.png"
+                    class="card-img"
+                    alt="kioviet"
+                />
+                <div class="card-img-overlay card-center">
+                    <div class="container">
+                        <div class="card-header">
+                            <h1 class="slider-title slider-wrap">
+                                Phần mềm<br />quản lý bán hàng phổ biến nhất
+                            </h1>
+                            <p class="text-white">
+                                Đơn giản, dễ dùng, tiết kiệm chi phí và phù hợp
+                                với tất cả các ngành hàng
+                            </p>
                         </div>
-                        <!-- Total -->
-                        <div class="slider__total kv-d-flex">
-                            <div
-                                class="slider__total-user kv-d-flex kv-flex-center"
-                            >
-                                <div
-                                    class="kv-d-flex kv-d-flex-center slider__center"
+                        <div class="card-body pt-0 d-flex align-content-center">
+                            <!-- CTA -->
+                            <div class="card-cta">
+                                <button
+                                    class="btn btn-success btn-lg slider__btn"
                                 >
-                                    <img
-                                        class="img-arrow"
-                                        src="./assets/icons/arrow-blue.svg"
-                                        alt="arrow-blue"
-                                    />
-                                    <div>
-                                        <b
-                                            class="slider__quantity-user kv-color-primary"
-                                            >200.000+
-                                        </b>
-                                        <span
-                                            class="kv-d-block text-banner kv-font-semibold"
-                                            >Nhà kinh doanh sử dụng</span
-                                        >
+                                    Dùng thử miễn phí
+                                </button>
+                                <button
+                                    class="btn btn-outline-light btn-lg slider__discover"
+                                >
+                                    Khám phá KiotViet
+                                </button>
+                            </div>
+                            <!-- Total -->
+                            <div class="slider-total d-flex">
+                                <div class="slider-total-user card-d-center">
+                                    <div
+                                        class="d-flex justify-content-center align-items-baseline"
+                                    >
+                                        <img
+                                            class="img-arrow"
+                                            src="./assets/icons/arrow-blue.svg"
+                                            alt="arrow-blue"
+                                        />
+                                        <div>
+                                            <b class="slider-quantity-user fs-3"
+                                                >200.000+
+                                            </b>
+                                            <span
+                                                class="d-block text-banner fw-semibold"
+                                                >Nhà kinh doanh sử dụng</span
+                                            >
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div
-                                class="slider__total-register kv-d-flex kv-flex-center"
-                            >
                                 <div
-                                    class="kv-d-flex kv-flex-center slider__center"
+                                    class="slider-total-register card-d-centerr"
                                 >
-                                    <img
-                                        class="img-arrow"
-                                        src="./assets/icons/arrow-orange.svg"
-                                        alt=""
-                                    />
-                                    <div>
-                                        <b
-                                            class="slider__quantity-user kv-color-warning"
-                                            >10.000+</b
-                                        >
-                                        <span
-                                            class="kv-d-block text-banner kv-font-semibold"
-                                            >Nhà kinh doanh mới mỗi tháng</span
-                                        >
+                                    <div
+                                        class="d-flex justify-content-center align-items-baseline"
+                                    >
+                                        <img
+                                            class="img-arrow"
+                                            src="./assets/icons/arrow-orange.svg"
+                                            alt=""
+                                        />
+                                        <div>
+                                            <b class="slider-quantity-user fs-3"
+                                                >10.000+</b
+                                            >
+                                            <span
+                                                class="d-block text-banner fw-semibold"
+                                                >Nhà kinh doanh mới mỗi
+                                                tháng</span
+                                            >
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -735,564 +181,512 @@
                 </div>
             </section>
             <!-- Benefit -->
-            <section class="benefit">
+            <section class="introduces-box">
                 <div class="container">
-                    <h2 class="benefit__heading kv-text-center">
+                    <h2 class="card-heading">
                         KiotViet giúp bạn quản lý dễ dàng, bán hàng hiệu quả
                     </h2>
-                    <div class="row benefit__list">
-                        <!-- Benefit Item 1 -->
-                        <section
-                            class="benefit-item kv-text-center col-24 col-md-8 col-sm-24"
-                        >
-                            <div
-                                class="benefit-item__icon form-icon-lg kv-bg-light-success"
-                            >
-                                <img
-                                    src="./assets/icons/benefit_1.svg"
-                                    alt=""
-                                    class="icon-benefit"
-                                />
-                            </div>
-                            <div class="benefit-item__body">
-                                <h3 class="benefit-item__heading">
-                                    Đơn giản & Dễ sử dụng
-                                </h3>
-                                <p class="benefit-item__desc">
-                                    Giao diện đơn giản, thân thiện, thông minh.
-                                    Nhân viên chỉ mất 15 phút làm quen để bắt
-                                    đầu bán hàng với KiotViet.
-                                </p>
-                            </div>
-                        </section>
-                        <!-- Benefit Item 2 -->
-                        <section
-                            class="benefit-item kv-text-center col-24 col-md-8 col-sm-24"
-                        >
-                            <div
-                                class="benefit-item__icon form-icon-lg kv-bg-light-warning"
-                            >
-                                <img
-                                    src="./assets/icons/benefit_2.svg"
-                                    alt=""
-                                    class="icon-benefit"
-                                />
-                            </div>
-                            <div class="benefit-item__body">
-                                <h3 class="benefit-item__heading">
-                                    Phù hợp cho từng ngành hàng
-                                </h3>
-                                <p class="benefit-item__desc">
-                                    Miễn phí cài đặt, phí triển khai, nâng cấp
-                                    và hỗ trợ. Rẻ hơn một ly trà đá, chỉ từ
-                                    6.000 đồng/ngày
-                                </p>
+                    <div class="row">
+                        <!-- Item 1 -->
+                        <section class="col-12 col-md-4 col-sm-12">
+                            <div class="card card-d-center card-border">
+                                <figure
+                                    class="card-icon-sm bg-success bg-opacity-10"
+                                >
+                                    <img
+                                        src="./assets/icons/benefit_1.svg"
+                                        alt=""
+                                        class="icon-benefit"
+                                    />
+                                </figure>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">
+                                        Đơn giản & Dễ sử dụng
+                                    </h5>
+                                    <p class="card-text">
+                                        Giao diện đơn giản, thân thiện, thông
+                                        minh. Nhân viên chỉ mất 15 phút làm quen
+                                        để bắt đầu bán hàng với KiotViet.
+                                    </p>
+                                </div>
                             </div>
                         </section>
-                        <!-- Benefit Item 3 -->
-                        <section
-                            class="benefit-item kv-text-center col-24 col-md-8 col-sm-24"
-                        >
-                            <div
-                                class="benefit-item__icon form-icon-lg kv-bg-light-primary"
-                            >
-                                <img
-                                    src="./assets/icons/benefit_3.svg"
-                                    alt=""
-                                    class="icon-benefit"
-                                />
+                        <!-- Item 2 -->
+                        <section class="col-12 col-md-4 col-sm-12">
+                            <div class="card card-d-center card-border">
+                                <figure
+                                    class="card-icon-sm bg-warning bg-opacity-10"
+                                >
+                                    <img
+                                        src="./assets/icons/benefit_2.svg"
+                                        alt=""
+                                        class="icon-benefit"
+                                    />
+                                </figure>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">
+                                        Phù hợp cho từng ngành hàng
+                                    </h5>
+                                    <p class="card-text">
+                                        Miễn phí cài đặt, phí triển khai, nâng
+                                        cấp và hỗ trợ. Rẻ hơn một ly trà đá, chỉ
+                                        từ 6.000 đồng/ngày
+                                    </p>
+                                </div>
                             </div>
-                            <div class="benefit-item__body">
-                                <h3 class="benefit-item__heading">
-                                    Tiết kiệm chi phí tối đa
-                                </h3>
-                                <p class="benefit-item__desc">
-                                    Miễn phí cài đặt, phí triển khai, nâng cấp
-                                    và hỗ trợ. Rẻ hơn một ly trà đá, chỉ từ
-                                    6.000 đồng/ngày
-                                </p>
+                        </section>
+                        <!-- Item 3 -->
+                        <section class="col-12 col-md-4 col-sm-12">
+                            <div class="card card-d-center card-border">
+                                <figure
+                                    class="card-icon-sm bg-info bg-opacity-10"
+                                >
+                                    <img
+                                        src="./assets/icons/benefit_3.svg"
+                                        alt=""
+                                        class="icon-benefit"
+                                    />
+                                </figure>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">
+                                        Tiết kiệm chi phí tối đa
+                                    </h5>
+                                    <p class="card-text">
+                                        Miễn phí cài đặt, phí triển khai, nâng
+                                        cấp và hỗ trợ. Rẻ hơn một ly trà đá, chỉ
+                                        từ 6.000 đồng/ngày
+                                    </p>
+                                </div>
                             </div>
                         </section>
                     </div>
                 </div>
             </section>
             <!-- Career -->
-            <section class="career kv-bg-light-success">
-                <h2 class="career__heading kv-text-center fs-3 fw-bold mb-8">
-                    Chúng tôi thiết kế phần mềm chuyên biệt cho từng ngành hàng
+            <section class="introduces-box bg-success bg-opacity-10">
+                <h2 class="card-heading">
+                    Chúng tôi thiết kế phần mềm <br />
+                    chuyên biệt cho từng ngành hàng
                 </h2>
                 <div class="container">
-                    <div class="row career__list">
+                    <div class="row">
                         <!-- Item 1 -->
-                        <article
-                            class="col-12 col-md-8 col-lg-6 career__item kv-text-center"
-                        >
-                            <a href="#!" class="career__item-content">
-                                <div
-                                    class="career-img__brand form-icon-sm kv-bg-light-success"
+                        <article class="col-6 col-md-4 col-lg-3 career-item">
+                            <a href="#!" class="card card-body card-body-md">
+                                <figure
+                                    class="card-icon-md bg-success bg-opacity-10"
                                 >
                                     <img
                                         class="icon-career"
                                         src="./assets/icons/icon-1.svg"
                                         alt="icon"
                                     />
-                                </div>
-                                <p class="career-item__desc kv-line-clamp">
-                                    Thời trang
-                                </p>
+                                </figure>
+                                <p class="card-text">Thời trang</p>
                             </a>
                         </article>
                         <!-- Item 2 -->
-                        <article
-                            class="col-12 col-md-8 col-lg-6 career__item kv-text-center"
-                        >
-                            <a href="#!" class="career__item-content">
-                                <div
-                                    class="career-img__brand form-icon-sm kv-bg-light-success"
+                        <article class="col-6 col-md-4 col-lg-3 career-item">
+                            <a href="#!" class="card card-body card-body-md">
+                                <figure
+                                    class="card-icon-md bg-success bg-opacity-10"
                                 >
                                     <img
                                         class="icon-career"
                                         src="./assets/icons/icon-2.svg"
                                         alt="icon"
                                     />
-                                </div>
-                                <p class="career-item__desc kv-line-clamp">
+                                </figure>
+                                <p class="card-text">
                                     Bar - Cafe & Nhà hàng Karaoke
                                 </p>
                             </a>
                         </article>
                         <!-- Item 3 -->
-                        <article
-                            class="col-12 col-md-8 col-lg-6 career__item kv-text-center"
-                        >
-                            <a href="#!" class="career__item-content">
-                                <div
-                                    class="career-img__brand form-icon-sm kv-bg-light-success"
+                        <article class="col-6 col-md-4 col-lg-3 career-item">
+                            <a href="#!" class="card card-body card-body-md">
+                                <figure
+                                    class="card-icon-md bg-success bg-opacity-10"
                                 >
                                     <img
                                         class="icon-career"
                                         src="./assets/icons/icon-3.svg"
                                         alt="icon"
                                     />
-                                </div>
-                                <p class="career-item__desc kv-line-clamp">
-                                    Tạp hóa & Siêu thị mini
-                                </p>
+                                </figure>
+                                <p class="card-text">Tạp hóa & Siêu thị mini</p>
                             </a>
                         </article>
                         <!-- Item 4 -->
-                        <article
-                            class="col-12 col-md-8 col-lg-6 career__item kv-text-center"
-                        >
-                            <a href="#!" class="career__item-content">
-                                <div
-                                    class="career-img__brand form-icon-sm kv-bg-light-success"
+                        <article class="col-6 col-md-4 col-lg-3 career-item">
+                            <a href="#!" class="card card-body card-body-md">
+                                <figure
+                                    class="card-icon-md bg-success bg-opacity-10"
                                 >
                                     <img
                                         class="icon-career"
                                         src="./assets/icons/icon-4.svg"
                                         alt="icon"
                                     />
-                                </div>
-                                <p class="career-item__desc kv-line-clamp">
-                                    Điện thoại & Điện máy
-                                </p>
+                                </figure>
+                                <p class="card-text">Điện thoại & Điện máy</p>
                             </a>
                         </article>
                         <!-- Item 5 -->
-                        <article
-                            class="col-12 col-md-8 col-lg-6 career__item kv-text-center"
-                        >
-                            <a href="#!" class="career__item-content">
-                                <div
-                                    class="career-img__brand form-icon-sm kv-bg-light-success"
+                        <article class="col-6 col-md-4 col-lg-3 career-item">
+                            <a href="#!" class="card card-body card-body-md">
+                                <figure
+                                    class="card-icon-md bg-success bg-opacity-10"
                                 >
                                     <img
                                         class="icon-career"
                                         src="./assets/icons/icon-5.svg"
                                         alt="icon"
                                     />
-                                </div>
-                                <p class="career-item__desc kv-line-clamp">
-                                    Mỹ phẩm
-                                </p>
+                                </figure>
+                                <p class="card-text">Mỹ phẩm</p>
                             </a>
                         </article>
                         <!-- Item 6 -->
-                        <article
-                            class="col-12 col-md-8 col-lg-6 career__item kv-text-center"
-                        >
-                            <a href="#!" class="career__item-content">
-                                <div
-                                    class="career-img__brand form-icon-sm kv-bg-light-success"
+                        <article class="col-6 col-md-4 col-lg-3 career-item">
+                            <a href="#!" class="card card-body card-body-md">
+                                <figure
+                                    class="card-icon-md bg-success bg-opacity-10"
                                 >
                                     <img
                                         class="icon-career"
                                         src="./assets/icons/icon-6.svg"
                                         alt="icon"
                                     />
-                                </div>
-                                <p class="career-item__desc kv-line-clamp">
+                                </figure>
+                                <p class="card-text">
                                     Hair Salon, Nails, Massage & Spa
                                 </p>
                             </a>
                         </article>
                         <!-- Item 7 -->
-                        <article
-                            class="col-12 col-md-8 col-lg-6 career__item kv-text-center"
-                        >
-                            <a href="#!" class="career__item-content">
-                                <div
-                                    class="career-img__brand form-icon-sm kv-bg-light-success"
+                        <article class="col-6 col-md-4 col-lg-3 career-item">
+                            <a href="#!" class="card card-body card-body-md">
+                                <figure
+                                    class="card-icon-md bg-success bg-opacity-10"
                                 >
                                     <img
                                         class="icon-career"
                                         src="./assets/icons/icon-7.svg"
                                         alt="icon"
                                     />
-                                </div>
-                                <p class="career-item__desc kv-line-clamp">
-                                    Nông sản & Thực phẩm
-                                </p>
+                                </figure>
+                                <p class="card-text">Nông sản & Thực phẩm</p>
                             </a>
                         </article>
                         <!-- Item 8 -->
-                        <article
-                            class="col-12 col-md-8 col-lg-6 career__item kv-text-center"
-                        >
-                            <a href="#!" class="career__item-content">
-                                <div
-                                    class="career-img__brand form-icon-sm kv-bg-light-success"
+                        <article class="col-6 col-md-4 col-lg-3 career-item">
+                            <a href="#!" class="card card-body card-body-md">
+                                <figure
+                                    class="card-icon-md bg-success bg-opacity-10"
                                 >
                                     <img
                                         class="icon-career"
                                         src="./assets/icons/icon-8.svg"
                                         alt="icon"
                                     />
-                                </div>
-                                <p class="career-item__desc kv-line-clamp">
-                                    Nhà thuốc
-                                </p>
+                                </figure>
+                                <p class="card-text">Nhà thuốc</p>
                             </a>
                         </article>
                         <!-- Item 9 -->
-                        <article
-                            class="col-12 col-md-8 col-lg-6 career__item kv-text-center"
-                        >
-                            <a href="#!" class="career__item-content">
-                                <div
-                                    class="career-img__brand form-icon-sm kv-bg-light-success"
+                        <article class="col-6 col-md-4 col-lg-3 career-item">
+                            <a href="#!" class="card card-body card-body-md">
+                                <figure
+                                    class="card-icon-md bg-success bg-opacity-10"
                                 >
                                     <img
                                         class="icon-career"
                                         src="./assets/icons/icon-9.svg"
                                         alt="icon"
                                     />
-                                </div>
-                                <p class="career-item__desc kv-line-clamp">
-                                    Vật liệu xây dựng
-                                </p>
+                                </figure>
+                                <p class="card-text">Vật liệu xây dựng</p>
                             </a>
                         </article>
                         <!-- Item 10 -->
-                        <article
-                            class="col-12 col-md-8 col-lg-6 career__item kv-text-center"
-                        >
-                            <a href="#!" class="career__item-content">
-                                <div
-                                    class="career-img__brand form-icon-sm kv-bg-light-success"
+                        <article class="col-6 col-md-4 col-lg-3 career-item">
+                            <a href="#!" class="card card-body card-body-md">
+                                <figure
+                                    class="card-icon-md bg-success bg-opacity-10"
                                 >
                                     <img
                                         class="icon-career"
                                         src="./assets/icons/icon-10.svg"
                                         alt="icon"
                                     />
-                                </div>
-                                <p class="career-item__desc kv-line-clamp">
+                                </figure>
+                                <p class="card-text">
                                     Xe, Máy móc & Linh kiện Sửa chữa
                                 </p>
                             </a>
                         </article>
                         <!-- Item 11 -->
-                        <article
-                            class="col-12 col-md-8 col-lg-6 career__item kv-text-center"
-                        >
-                            <a href="#!" class="career__item-content">
-                                <div
-                                    class="career-img__brand form-icon-sm kv-bg-light-success"
+                        <article class="col-6 col-md-4 col-lg-3 career-item">
+                            <a href="#!" class="card card-body card-body-md">
+                                <figure
+                                    class="card-icon-md bg-success bg-opacity-10"
                                 >
                                     <img
                                         class="icon-career"
                                         src="./assets/icons/icon-11.svg"
                                         alt="icon"
                                     />
-                                </div>
-                                <p class="career-item__desc kv-line-clamp">
-                                    Nội thất & Gia dụng
-                                </p>
+                                </figure>
+                                <p class="card-text">Nội thất & Gia dụng</p>
                             </a>
                         </article>
                         <!-- Item 12 -->
-                        <article
-                            class="col-12 col-md-8 col-lg-6 career__item kv-text-center"
-                        >
-                            <a href="#!" class="career__item-content">
-                                <div
-                                    class="career-img__brand form-icon-sm kv-bg-light-success"
+                        <article class="col-6 col-md-4 col-lg-3 career-item">
+                            <a href="#!" class="card card-body card-body-md">
+                                <figure
+                                    class="card-icon-md bg-success bg-opacity-10"
                                 >
                                     <img
                                         class="icon-career"
                                         src="./assets/icons/icon-7.svg"
                                         alt="icon"
                                     />
-                                </div>
-                                <p class="career-item__desc kv-line-clamp">
-                                    Mẹ & Bé
-                                </p>
+                                </figure>
+                                <p class="card-text">Mẹ & Bé</p>
                             </a>
                         </article>
                         <!-- Item 13 -->
-                        <article
-                            class="col-12 col-md-8 col-lg-6 career__item kv-text-center"
-                        >
-                            <a href="#!" class="career__item-content">
-                                <div
-                                    class="career-img__brand form-icon-sm kv-bg-light-success"
+                        <article class="col-6 col-md-4 col-lg-3 career-item">
+                            <a href="#!" class="card card-body card-body-md">
+                                <figure
+                                    class="card-icon-md bg-success bg-opacity-10"
                                 >
                                     <img
                                         class="icon-career"
                                         src="./assets/icons/icon-13.svg"
                                         alt="icon"
                                     />
-                                </div>
-                                <p class="career-item__desc kv-line-clamp">
-                                    Sách & Văn phòng phẩm
-                                </p>
+                                </figure>
+                                <p class="card-text">Sách & Văn phòng phẩm</p>
                             </a>
                         </article>
                         <!-- Item 14 -->
-                        <article
-                            class="col-12 col-md-8 col-lg-6 career__item kv-text-center"
-                        >
-                            <a href="#!" class="career__item-content">
-                                <div
-                                    class="career-img__brand form-icon-sm kv-bg-light-success"
+                        <article class="col-6 col-md-4 col-lg-3 career-item">
+                            <a href="#!" class="card card-body card-body-md">
+                                <figure
+                                    class="card-icon-md bg-success bg-opacity-10"
                                 >
                                     <img
                                         class="icon-career"
                                         src="./assets/icons/icon-14.svg"
                                         alt="icon"
                                     />
-                                </div>
-                                <p class="career-item__desc kv-line-clamp">
-                                    Hoa & Quà tặng
-                                </p>
+                                </figure>
+                                <p class="card-text">Hoa & Quà tặng</p>
                             </a>
                         </article>
                         <!-- Item 15 -->
-                        <article
-                            class="col-12 col-md-8 col-lg-6 career__item kv-text-center"
-                        >
-                            <a href="#!" class="career__item-content">
-                                <div
-                                    class="career-img__brand form-icon-sm kv-bg-light-success"
+                        <article class="col-6 col-md-4 col-lg-3 career-item">
+                            <a href="#!" class="card card-body card-body-md">
+                                <figure
+                                    class="card-icon-md bg-success bg-opacity-10"
                                 >
                                     <img
                                         class="icon-career"
                                         src="./assets/icons/icon-15.svg"
                                         alt="icon"
                                     />
-                                </div>
-                                <p class="career-item__desc kv-line-clamp">
-                                    Ngành hàng khác
-                                </p>
+                                </figure>
+                                <p class="card-text">Ngành hàng khác</p>
                             </a>
                         </article>
                     </div>
                 </div>
-
                 <!-- Career CTA -->
-                <div class="career__reg kv-text-center">
-                    <div
-                        class="career__box kv-inline-flex-center kv-bg-light-success"
-                    >
-                        <p class="career-reg__title">
-                            10 ngày dùng thử miễn phí
-                        </p>
-                        <button
-                            type="button"
-                            class="kv-btn kv-btn-xl kv-btn-success kv-btn-circle kv-d-flex kv-flex-center career-sign"
-                        >
-                            <div class="career__img form-icon">
-                                <img
-                                    src="./assets/icons/arrow-right.svg"
-                                    alt=""
-                                    class="icon-arrow-right"
-                                />
-                            </div>
-                            <span class="career-reg-desc">Đăng ký ngay</span>
+                <div class="career-cta">
+                    <div class="card-d-center">
+                        <p class="card-text m-0">10 ngày dùng thử miễn phí</p>
+                        <button type="button" class="btn btn-success btn-lg">
+                            Đăng ký ngay
                         </button>
                     </div>
                 </div>
             </section>
             <!-- Solution -->
-            <section class="solution">
-                <h2 class="solution__heading kv-text-center">
-                    <strong class="kv-color-success">Giải pháp</strong>
+            <section class="introduces-box">
+                <h2 class="card-heading">
+                    <strong class="text-success">Giải pháp</strong>
                     Bán hàng online hiệu quả
                 </h2>
                 <div class="container">
-                    <div class="row kv-flex-center">
-                        <div class="col-24 col-xl-20 solution__list">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-xl-10 solution__list">
                             <!-- Solution 1 -->
                             <section
-                                class="solution-item kv-d-flex kv-flex-center kv-bg-light-success"
+                                class="card bg-success bg-opacity-10 solution-item"
                             >
-                                <div class="solution__img kv-bg-light-success">
-                                    <a href="#!">
-                                        <img
-                                            width="340"
-                                            height="246"
-                                            class="solution__thumb"
-                                            src="./assets/img/solution-1.png"
-                                            alt="Solution"
-                                        />
-                                    </a>
-                                </div>
-                                <div class="solution__content">
-                                    <h3 class="solution__title">
-                                        Đồng bộ với các Sàn thương mại điện tử
-                                    </h3>
-                                    <p class="solution__desc">
-                                        KiotViet đem đến giải pháp quản lý bán
-                                        hàng dễ dàng & hiệu quả trên các sàn
-                                        TMĐT phổ biến nhất hiện nay như Tiki,
-                                        Shopee, Lazada, Sendo... Quản lý tập
-                                        trung nhiều gian hàng trên một giao
-                                        diện, tự động đồng bộ tồn kho - giá bán,
-                                        tiết kiệm thời gian, đơn đi bạt ngàn.
-                                    </p>
-                                    <a href="#!" class="solution__link"
-                                        >Xem chi tiết
-                                        <img
-                                            class="solution__arrow"
-                                            src="./assets/icons/arrow-right-green.svg"
-                                            alt="arrow-right"
-                                        />
-                                    </a>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a href="#!">
+                                            <img
+                                                class="solution__thumb"
+                                                src="./assets/img/solution-1.png"
+                                                alt="Solution"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h3 class="card-title">
+                                                Đồng bộ với các Sàn thương mại
+                                                điện tử
+                                            </h3>
+                                            <p class="card-desc">
+                                                KiotViet đem đến giải pháp quản
+                                                lý bán hàng dễ dàng & hiệu quả
+                                                trên các sàn TMĐT phổ biến nhất
+                                                hiện nay như Tiki, Shopee,
+                                                Lazada, Sendo... Quản lý tập
+                                                trung nhiều gian hàng trên một
+                                                giao diện, tự động đồng bộ tồn
+                                                kho - giá bán, tiết kiệm thời
+                                                gian, đơn đi bạt ngàn.
+                                            </p>
+                                            <a href="#!" class="text-success"
+                                                >Xem chi tiết
+                                                <img
+                                                    class="solution__arrow"
+                                                    src="./assets/icons/arrow-right-green.svg"
+                                                    alt="arrow-right"
+                                                />
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </section>
                             <!-- Solution 2 -->
                             <section
-                                class="solution-item form-reverse kv-d-flex kv-flex-center kv-bg-light-primary"
+                                class="card bg-primary bg-opacity-10 solution-item"
                             >
-                                <div class="solution__img kv-bg-light-primary">
-                                    <a href="#!">
-                                        <img
-                                            width="340"
-                                            height="246"
-                                            class="solution__thumb"
-                                            src="./assets/img/solution-2.png"
-                                            alt="Solution"
-                                        />
-                                    </a>
-                                </div>
-                                <div class="solution__content">
-                                    <h3 class="solution__title">
-                                        Tạo website bán hàng trong 5 phút
-                                    </h3>
-                                    <p class="solution__desc">
-                                        Chỉ với 5 phút bán hàng, bạn đã có thể
-                                        tạo ra một website bán hàng với nhiều
-                                        giao diện phù hợp và bắt mắt. Mykiot
-                                        giúp bạn có thêm một giải pháp bán hàng
-                                        thương mại điện tử thật dễ dàng và đơn
-                                        giản chỉ với 100K/tháng.
-                                    </p>
-                                    <a href="#!" class="solution__link"
-                                        >Xem chi tiết
-                                        <img
-                                            class="solution__arrow"
-                                            src="./assets/icons/arrow-right-green.svg"
-                                            alt="arrow-right"
-                                        />
-                                    </a>
+                                <div class="row flex-row-reverse">
+                                    <div class="col-4">
+                                        <a href="#!">
+                                            <img
+                                                class="solution__thumb"
+                                                src="./assets/img/solution-2.png"
+                                                alt="Solution"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h3 class="card-title">
+                                                Tạo website bán hàng trong 5
+                                                phút
+                                            </h3>
+                                            <p class="card-desc">
+                                                Chỉ với 5 phút bán hàng, bạn đã
+                                                có thể tạo ra một website bán
+                                                hàng với nhiều giao diện phù hợp
+                                                và bắt mắt. Mykiot giúp bạn có
+                                                thêm một giải pháp bán hàng
+                                                thương mại điện tử thật dễ dàng
+                                                và đơn giản chỉ với 100K/tháng.
+                                            </p>
+                                            <a href="#!" class="text-success"
+                                                >Xem chi tiết
+                                                <img
+                                                    class="solution__arrow"
+                                                    src="./assets/icons/arrow-right-green.svg"
+                                                    alt="arrow-right"
+                                                />
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </section>
                             <!-- Solution 3 -->
                             <section
-                                class="solution-item kv-d-flex kv-flex-center kv-bg-light-promotion"
+                                class="card bg-danger bg-opacity-10 solution-item"
                             >
-                                <div
-                                    class="solution__img kv-bg-light-promotion"
-                                >
-                                    <a href="#!">
-                                        <img
-                                            width="340"
-                                            height="246"
-                                            class="solution__thumb"
-                                            src="./assets/img/solution-3.png"
-                                            alt="Solution"
-                                        />
-                                    </a>
-                                </div>
-                                <div class="solution__content">
-                                    <h3 class="solution__title">
-                                        Liên kết quản lý bán hàng trên Facebook
-                                    </h3>
-                                    <p class="solution__desc">
-                                        KiotViet cung cấp giải pháp quản lý &
-                                        bán hàng trên Fanpage Facebook tiện lợi
-                                        và nhanh chóng, đáp ứng đầy đủ nhu cầu
-                                        của hàng triệu chủ shop kinh doanh
-                                        online thuộc tất cả mọi ngành hàng.
-                                    </p>
-                                    <a href="#!" class="solution__link"
-                                        >Xem chi tiết
-                                        <img
-                                            class="solution__arrow"
-                                            src="./assets/icons/arrow-right-green.svg"
-                                            alt="arrow-right"
-                                        />
-                                    </a>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a href="#!">
+                                            <img
+                                                class="solution__thumb"
+                                                src="./assets/img/solution-3.png"
+                                                alt="Solution"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h3 class="card-title">
+                                                Liên kết quản lý bán hàng trên
+                                                Facebook
+                                            </h3>
+                                            <p class="card-text">
+                                                KiotViet cung cấp giải pháp quản
+                                                lý & bán hàng trên Fanpage
+                                                Facebook tiện lợi và nhanh
+                                                chóng, đáp ứng đầy đủ nhu cầu
+                                                của hàng triệu chủ shop kinh
+                                                doanh online thuộc tất cả mọi
+                                                ngành hàng.
+                                            </p>
+                                            <a href="#!" class="text-success"
+                                                >Xem chi tiết
+                                                <img
+                                                    class="solution__arrow"
+                                                    src="./assets/icons/arrow-right-green.svg"
+                                                    alt="arrow-right"
+                                                />
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </section>
                             <!-- Solution 4 -->
                             <section
-                                class="solution-item form-reverse kv-d-flex kv-flex-center kv-bg-light-warning"
+                                class="card bg-warning bg-opacity-10 solution-item"
                             >
-                                <div class="solution__img kv-bg-light-warning">
-                                    <a href="#!">
-                                        <img
-                                            width="340"
-                                            height="246"
-                                            class="solution__thumb"
-                                            src="./assets/img/solution-4.png"
-                                            alt="Solution"
-                                        />
-                                    </a>
-                                </div>
-                                <div class="solution__content">
-                                    <h3 class="solution__title">
-                                        Giải pháp giao hàng dễ dàng
-                                    </h3>
-                                    <p class="solution__desc">
-                                        Tích hợp vận chuyển với hầu hết các hãng
-                                        vận chuyển trên thị trường như
-                                        Giaohangnhanh, ViettelPost, VNPT Post,
-                                        J&T… KiotShip mang lại cho khách hàng
-                                        một dịch vụ hoàn hảo và chi phí vô cùng
-                                        tiết kiệm với nhiều chính sách ưu đãi
-                                        của các hãng vận chuyển.
-                                    </p>
-                                    <a href="#!" class="solution__link"
-                                        >Xem chi tiết
-                                        <img
-                                            class="solution__arrow"
-                                            src="./assets/icons/arrow-right-green.svg"
-                                            alt="arrow-right"
-                                        />
-                                    </a>
+                                <div class="row flex-row-reverse">
+                                    <div class="col-4">
+                                        <a href="#!">
+                                            <img
+                                                class="solution__thumb"
+                                                src="./assets/img/solution-4.png"
+                                                alt="Solution"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h3 class="card-title">
+                                                Giải pháp giao hàng dễ dàng
+                                            </h3>
+                                            <p class="card-text">
+                                                Tích hợp vận chuyển với hầu hết
+                                                các hãng vận chuyển trên thị
+                                                trường như Giaohangnhanh,
+                                                ViettelPost, VNPT Post, J&T…
+                                                KiotShip mang lại cho khách hàng
+                                                một dịch vụ hoàn hảo và chi phí
+                                                vô cùng tiết kiệm với nhiều
+                                                chính sách ưu đãi của các hãng
+                                                vận chuyển.
+                                            </p>
+                                            <a href="#!" class="text-success"
+                                                >Xem chi tiết
+                                                <img
+                                                    class="solution__arrow"
+                                                    src="./assets/icons/arrow-right-green.svg"
+                                                    alt="arrow-right"
+                                                />
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </section>
                         </div>
@@ -1300,285 +694,333 @@
                 </div>
             </section>
             <!-- Customers -->
-            <section class="customers">
+            <section class="introduces-box">
                 <div class="container">
-                    <h2 class="customers__heading kv-text-center">
-                        Khách hàng của chúng tôi
-                    </h2>
+                    <h2 class="card-heading">Khách hàng của chúng tôi</h2>
                     <div class="row customers__list">
                         <!-- Customers Item 1 -->
-                        <div class="col-xl-8 col-lg-12">
-                            <article class="customers-item kv-d-flex">
-                                <a href="#!" class="img-form-md">
-                                    <img
-                                        src="./assets/img/customers-1.png"
-                                        alt="customers"
-                                        class="img-thumb"
-                                    />
-                                </a>
-                                <div class="customers__info">
-                                    <h4 class="customers__title kv-line-clamp">
-                                        HíuSunglasses Phong cách là mãi mãi -
-                                        Forever
-                                    </h4>
-                                    <p
-                                        class="customers__desc kv-line-clamp"
-                                        style="--kv-line-clamp: 2"
-                                    >
-                                        Tầng 3, số 2, Ngõ 10, Nguyễn Văn Huyên,
-                                        Cầu Giấy, Hà Nội
-                                    </p>
+                        <div class="col-xl-4 col-lg-6">
+                            <article class="card card-border mb-5">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a href="#!" class="img-form-md">
+                                            <img
+                                                src="./assets/img/customers-1.png"
+                                                alt="customers"
+                                                class="card-img"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body pt-0">
+                                            <h4 class="card-title line-clamp">
+                                                HíuSunglasses Phong cách là mãi
+                                                mãi - Forever
+                                            </h4>
+                                            <p
+                                                class="card-text line-clamp"
+                                                style="--line-clamp: 2"
+                                            >
+                                                Tầng 3, số 2, Ngõ 10, Nguyễn Văn
+                                                Huyên, Cầu Giấy, Hà Nội
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
                         </div>
                         <!-- Customers Item 2 -->
-                        <div class="col-xl-8 col-lg-12">
-                            <article class="customers-item kv-d-flex">
-                                <a href="#!" class="img-form-md">
-                                    <img
-                                        src="./assets/img/customers-2.png"
-                                        alt="customers"
-                                        class="img-thumb"
-                                    />
-                                </a>
-                                <div class="customers__info">
-                                    <h4 class="customers__title kv-line-clamp">
-                                        Cửa hàng Minh Tuấn MOBILE – Chinh phục
-                                        khách hàng bằng cái tâm
-                                    </h4>
-                                    <p
-                                        class="customers__desc kv-line-clamp"
-                                        style="--kv-line-clamp: 2"
-                                    >
-                                        450E Điện Biên Phủ - P. 21, Quận Bình
-                                        Thạnh, thành phố Hồ Chí Minh
-                                    </p>
+                        <div class="col-xl-4 col-lg-6">
+                            <article class="card card-border mb-5">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a href="#!" class="img-form-md">
+                                            <img
+                                                src="./assets/img/customers-2.png"
+                                                alt="customers"
+                                                class="card-img"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body pt-0">
+                                            <h4 class="card-title line-clamp">
+                                                Cửa hàng Minh Tuấn MOBILE –
+                                                Chinh phục khách hàng bằng cái
+                                                tâm
+                                            </h4>
+                                            <p
+                                                class="card-text line-clamp"
+                                                style="--line-clamp: 2"
+                                            >
+                                                450E Điện Biên Phủ - P. 21, Quận
+                                                Bình Thạnh, thành phố Hồ Chí
+                                                Minh
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
                         </div>
                         <!-- Customers Item 3 -->
-                        <div class="col-xl-8 col-lg-12">
-                            <article class="customers-item kv-d-flex">
-                                <a href="#!" class="img-form-md">
-                                    <img
-                                        src="./assets/img/customers-3.png"
-                                        alt="customers"
-                                        class="img-thumb"
-                                    />
-                                </a>
-                                <div class="customers__info">
-                                    <h4 class="customers__title kv-line-clamp">
-                                        CHANH COSMETIC BOX
-                                    </h4>
-                                    <p
-                                        class="customers__desc kv-line-clamp"
-                                        style="--kv-line-clamp: 2"
-                                    >
-                                        220 Nguyễn Văn Cừ, Tp Vinh, tỉnh Nghệ An
-                                    </p>
+                        <div class="col-xl-4 col-lg-6">
+                            <article class="card card-border mb-5">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a href="#!" class="img-form-md">
+                                            <img
+                                                src="./assets/img/customers-3.png"
+                                                alt="customers"
+                                                class="card-img"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body pt-0">
+                                            <h4 class="card-title line-clamp">
+                                                CHANH COSMETIC BOX
+                                            </h4>
+                                            <p
+                                                class="card-text line-clamp"
+                                                style="--line-clamp: 2"
+                                            >
+                                                220 Nguyễn Văn Cừ, Tp Vinh, tỉnh
+                                                Nghệ An
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
                         </div>
                         <!-- Customers Item 4 -->
-                        <div class="col-xl-8 col-lg-12">
-                            <article class="customers-item kv-d-flex">
-                                <a href="#!" class="img-form-md">
-                                    <img
-                                        src="./assets/img/customers-4.png"
-                                        alt="customers"
-                                        class="img-thumb"
-                                    />
-                                </a>
-                                <div class="customers__info">
-                                    <h4 class="customers__title kv-line-clamp">
-                                        HíuSunglasses Phong cách là mãi mãi -
-                                        Forever
-                                    </h4>
-                                    <p
-                                        class="customers__desc kv-line-clamp"
-                                        style="--kv-line-clamp: 2"
-                                    >
-                                        Tầng 3, số 2, Ngõ 10, Nguyễn Văn Huyên,
-                                        Cầu Giấy, Hà Nội
-                                    </p>
+                        <div class="col-xl-4 col-lg-6">
+                            <article class="card card-border mb-5">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a href="#!" class="img-form-md">
+                                            <img
+                                                src="./assets/img/customers-4.png"
+                                                alt="customers"
+                                                class="card-img"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body pt-0">
+                                            <h4 class="card-title line-clamp">
+                                                HíuSunglasses Phong cách là mãi
+                                                mãi - Forever
+                                            </h4>
+                                            <p
+                                                class="card-text line-clamp"
+                                                style="--line-clamp: 2"
+                                            >
+                                                Tầng 3, số 2, Ngõ 10, Nguyễn Văn
+                                                Huyên, Cầu Giấy, Hà Nội
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
                         </div>
                         <!-- Customers Item 5 -->
-                        <div class="col-xl-8 col-lg-12">
-                            <article class="customers-item kv-d-flex">
-                                <a href="#!" class="img-form-md">
-                                    <img
-                                        src="./assets/img/customers-5.png"
-                                        alt="customers"
-                                        class="img-thumb"
-                                    />
-                                </a>
-                                <div class="customers__info">
-                                    <h4 class="customers__title kv-line-clamp">
-                                        HíuSunglasses Phong cách là mãi mãi -
-                                        Forever
-                                    </h4>
-                                    <p
-                                        class="customers__desc kv-line-clamp"
-                                        style="--kv-line-clamp: 2"
-                                    >
-                                        Tầng 3, số 2, Ngõ 10, Nguyễn Văn Huyên,
-                                        Cầu Giấy, Hà Nội
-                                    </p>
+                        <div class="col-xl-4 col-lg-6">
+                            <article class="card card-border mb-5">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a href="#!" class="img-form-md">
+                                            <img
+                                                src="./assets/img/customers-5.png"
+                                                alt="customers"
+                                                class="card-img"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body pt-0">
+                                            <h4 class="card-title line-clamp">
+                                                HíuSunglasses Phong cách là mãi
+                                                mãi - Forever
+                                            </h4>
+                                            <p
+                                                class="card-text line-clamp"
+                                                style="--line-clamp: 2"
+                                            >
+                                                Tầng 3, số 2, Ngõ 10, Nguyễn Văn
+                                                Huyên, Cầu Giấy, Hà Nội
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
                         </div>
                         <!-- Customers Item 6 -->
-                        <div class="col-xl-8 col-lg-12">
-                            <article class="customers-item kv-d-flex">
-                                <a href="#!" class="img-form-md">
-                                    <img
-                                        src="./assets/img/customers-6.png"
-                                        alt="customers"
-                                        class="img-thumb"
-                                    />
-                                </a>
-                                <div class="customers__info">
-                                    <h4 class="customers__title kv-line-clamp">
-                                        HíuSunglasses Phong cách là mãi mãi -
-                                        Forever
-                                    </h4>
-                                    <p
-                                        class="customers__desc kv-line-clamp"
-                                        style="--kv-line-clamp: 2"
-                                    >
-                                        Tầng 3, số 2, Ngõ 10, Nguyễn Văn Huyên,
-                                        Cầu Giấy, Hà Nội
-                                    </p>
+                        <div class="col-xl-4 col-lg-6">
+                            <article class="card card-border mb-5">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a href="#!" class="img-form-md">
+                                            <img
+                                                src="./assets/img/customers-6.png"
+                                                alt="customers"
+                                                class="card-img"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body pt-0">
+                                            <h4 class="card-title line-clamp">
+                                                HíuSunglasses Phong cách là mãi
+                                                mãi - Forever
+                                            </h4>
+                                            <p
+                                                class="card-text line-clamp"
+                                                style="--line-clamp: 2"
+                                            >
+                                                Tầng 3, số 2, Ngõ 10, Nguyễn Văn
+                                                Huyên, Cầu Giấy, Hà Nội
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
                         </div>
                     </div>
-                    <div class="customers__cta kv-text-center">
-                        <a
-                            href="#!"
-                            class="customers__btn kv-btn kv-btn-xxl kv-btn-outline-success kv-btn-circle"
+                    <div class="text-center mt-8">
+                        <a href="#!" class="btn btn-lg btn-outline-success"
                             >Tất cả khách hàng</a
                         >
                     </div>
                 </div>
             </section>
             <!-- Social -->
-            <section class="social kv-bg-light-success">
+            <section class="introduces-box bg-success bg-opacity-10">
                 <div class="container">
-                    <h2 class="social__heading kv-text-center">
-                        Trải nghiệm ứng dụng KiotViet trên GooglePlay & Appstore
+                    <h2 class="card-heading">
+                        Trải nghiệm ứng dụng KiotViet trên <br />GooglePlay &
+                        Appstore
                     </h2>
-                    <div class="row kv-flex-center">
-                        <div class="col-lg-20">
-                            <div class="social__list kv-flex-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 offset-2">
+                            <div class="social-list d-flex">
                                 <!-- Social Item 1 -->
                                 <article
-                                    class="col-24 col-sm-12 col-md-8 social-item"
+                                    class="col-6 col-sm-3 col-md-2 social-item"
                                 >
-                                    <a href="#!" class="img-form-sm">
-                                        <img
-                                            src="./assets/img/social-1.png"
-                                            alt="social"
-                                            class="img-thumb"
-                                        />
-                                    </a>
-                                    <a href="#!">
-                                        <div class="social__content">
-                                            <p class="social__title">
-                                                Bán hàng
-                                            </p>
+                                    <div class="card card-sm card-d-center">
+                                        <a href="#!" class="img-form-sm">
                                             <img
-                                                src="./assets/icons/star.svg"
-                                                alt="star"
-                                                class="social__star"
+                                                src="./assets/img/social-1.png"
+                                                alt="social"
+                                                class="card-img"
                                             />
-                                        </div>
-                                    </a>
+                                        </a>
+                                        <a href="#!">
+                                            <div class="card-body">
+                                                <p class="card-title">
+                                                    Bán hàng
+                                                </p>
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt="star"
+                                                    class="social__star"
+                                                />
+                                            </div>
+                                        </a>
+                                    </div>
                                 </article>
                                 <!-- Social Item 2 -->
                                 <article
-                                    class="col-24 col-sm-12 col-md-8 social-item"
+                                    class="col-6 col-sm-3 col-md-2 social-item"
                                 >
-                                    <a href="#!" class="img-form-sm">
-                                        <img
-                                            src="./assets/img/social-2.png"
-                                            alt="social"
-                                            class="img-thumb"
-                                        />
-                                    </a>
-                                    <a href="#!">
-                                        <div class="social__content">
-                                            <p class="social__title">Quản lý</p>
+                                    <div class="card card-sm card-d-center">
+                                        <a href="#!" class="img-form-sm">
                                             <img
-                                                src="./assets/icons/star.svg"
-                                                alt="star"
-                                                class="social__star"
+                                                src="./assets/img/social-2.png"
+                                                alt="social"
+                                                class="card-img"
                                             />
-                                        </div>
-                                    </a>
+                                        </a>
+                                        <a href="#!">
+                                            <div class="card-body">
+                                                <p class="card-title">
+                                                    Quản lý
+                                                </p>
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt="star"
+                                                    class="social__star"
+                                                />
+                                            </div>
+                                        </a>
+                                    </div>
                                 </article>
                                 <!-- Social Item 3 -->
-                                <article class="social__link social-item">
-                                    <div class="social__qr img-form-qr">
-                                        <img
-                                            src="./assets/img/qr.png"
-                                            alt="qr"
-                                            class="img-qr"
-                                        />
+                                <article class="card-qr social-item">
+                                    <div class="card card-sm card-d-center">
+                                        <div class="social-qr">
+                                            <img
+                                                src="./assets/img/qr.png"
+                                                alt="qr"
+                                                class="img-qr"
+                                            />
+                                        </div>
+                                        <p class="card-title">
+                                            Quét mã để tải ứng dụng
+                                        </p>
                                     </div>
-                                    <p class="social-qr__desc">
-                                        Quét mã để tải ứng dụng
-                                    </p>
                                 </article>
                                 <!-- Social Item 4-->
                                 <article
-                                    class="col-24 col-sm-12 col-md-8 social-item"
+                                    class="col-6 col-sm-3 col-md-2 social-item"
                                 >
-                                    <a href="#!" class="img-form-sm">
-                                        <img
-                                            src="./assets/img/social-3.png"
-                                            alt="social"
-                                            class="img-thumb"
-                                        />
-                                    </a>
-                                    <a href="#!">
-                                        <div class="social__content">
-                                            <p class="social__title">
-                                                Café Nhà hàng
-                                            </p>
+                                    <div class="card card-sm card-d-center">
+                                        <a href="#!" class="img-form-sm">
                                             <img
-                                                src="./assets/icons/star.svg"
-                                                alt="star"
-                                                class="social__star"
+                                                src="./assets/img/social-3.png"
+                                                alt="social"
+                                                class="card-img"
                                             />
-                                        </div>
-                                    </a>
+                                        </a>
+                                        <a href="#!">
+                                            <div class="card-body">
+                                                <p class="card-title">
+                                                    Café Nhà hàng
+                                                </p>
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt="star"
+                                                    class="social__star"
+                                                />
+                                            </div>
+                                        </a>
+                                    </div>
                                 </article>
                                 <!-- Social Item 5-->
                                 <article
-                                    class="col-24 col-sm-12 col-md-8 social-item"
+                                    class="col-6 col-sm-3 col-md-2 social-item"
                                 >
-                                    <a href="#!" class="img-form-sm">
-                                        <img
-                                            src="./assets/img/social-4.png"
-                                            alt="social"
-                                            class="img-thumb"
-                                        />
-                                    </a>
-                                    <a href="#!">
-                                        <div class="social__content">
-                                            <p class="social__title">
-                                                Quản lý nhà hàng
-                                            </p>
+                                    <div class="card card-sm card-d-center">
+                                        <a href="#!" class="img-form-sm">
                                             <img
-                                                src="./assets/icons/star.svg"
-                                                alt="star"
-                                                class="social__star"
+                                                src="./assets/img/social-4.png"
+                                                alt="social"
+                                                class="card-img"
                                             />
-                                        </div>
-                                    </a>
+                                        </a>
+                                        <a href="#!">
+                                            <div class="card-body">
+                                                <p class="card-title">
+                                                    Quản lý nhà hàng
+                                                </p>
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt="star"
+                                                    class="social__star"
+                                                />
+                                            </div>
+                                        </a>
+                                    </div>
                                 </article>
                             </div>
                         </div>
@@ -1586,164 +1028,183 @@
                 </div>
             </section>
             <!-- Blog -->
-            <section class="blog">
+            <section class="introduces-box">
                 <div class="container">
                     <!-- Blog -->
-                    <h2 class="blog__heading kv-text-center">Tin tức nổi bật</h2>
-                    <div class="row blog__list">
+                    <h2 class="card-heading">Tin tức nổi bật</h2>
+                    <div class="row">
                         <!-- Blog list left -->
-                        <div class="col-lg-16 blog-list__left">
+                        <div class="col-lg-8">
                             <div class="row">
                                 <!-- Blog Item 1 -->
-                                <article
-                                    class="col-sm-24 col-lg-12 col-md-12 blog-item blog-item-1"
-                                >
-                                    <a href="#!" class="img-form-xl">
-                                        <img
-                                            src="./assets/img/blog-1.png"
-                                            alt="blog"
-                                            class="img-thumb"
-                                        />
-                                    </a>
-                                    <div class="blog__content">
-                                        <h3 class="blog__title kv-line-clamp">
-                                            KiotViet ra mắt phiên bản mới: Phần
-                                            mềm quản lý dành riêng cho Hair
-                                            salon, Nails Massage & Spa
-                                        </h3>
-                                        <p
-                                            class="blog__desc kv-line-clamp"
-                                            style="--kv-line-clamp: 2"
-                                        >
-                                            Phần mềm quản lý bán hàng KiotViet
-                                            vừa cho ra mắt phiên bản màn hình
-                                            bán hàng mới gồm 3 Lorem ipsum dolor
-                                            sit, amet consectetur adipisicing
-                                            elit. Ex, reprehenderit.
-                                        </p>
-                                        <p class="blog__days">
-                                            24 tháng 11, 2021
-                                        </p>
-                                        <a href="#!" class="blog__link"
-                                            >Xem thêm</a
-                                        >
+                                <article class="col-sm-12 col-lg-6 col-md-6">
+                                    <div class="card card-border">
+                                        <a href="#!" class="img-form-xl">
+                                            <img
+                                                src="./assets/img/blog-1.png"
+                                                alt="blog"
+                                                class="card-img"
+                                            />
+                                        </a>
+                                        <div class="card-body">
+                                            <h3 class="card-title line-clamp">
+                                                KiotViet ra mắt phiên bản mới:
+                                                Phần mềm quản lý dành riêng cho
+                                                Hair salon, Nails Massage & Spa
+                                            </h3>
+                                            <p
+                                                class="card-text line-clamp"
+                                                style="--line-clamp: 2"
+                                            >
+                                                Phần mềm quản lý bán hàng
+                                                KiotViet vừa cho ra mắt phiên
+                                                bản màn hình bán hàng mới gồm 3
+                                                Lorem ipsum dolor sit, amet
+                                                consectetur adipisicing elit.
+                                                Ex, reprehenderit.
+                                            </p>
+                                            <p class="card-day">
+                                                24 tháng 11, 2021
+                                            </p>
+                                            <a href="#!" class="card-link"
+                                                >Xem thêm</a
+                                            >
+                                        </div>
                                     </div>
                                 </article>
                                 <!-- Blog Item 2 -->
-                                <article
-                                    class="col-sm-24 col-lg-12 col-md-12 blog-item blog-item-2"
-                                >
-                                    <a href="#!" class="img-form-xl">
-                                        <img
-                                            src="./assets/img/blog-2.png"
-                                            alt="blog"
-                                            class="img-thumb"
-                                        />
-                                    </a>
-                                    <div class="blog__content">
-                                        <h3 class="blog__title kv-line-clamp">
-                                            Phần mềm quản lý bán hàng KiotViet
-                                            gọi vốn thành công 45 triệu USD
-                                        </h3>
-                                        <p
-                                            class="blog__desc kv-line-clamp"
-                                            style="--kv-line-clamp: 2"
-                                        >
-                                            Phần mềm quản lý bán hàng KiotViet
-                                            vừa công bố chính thức gọi vốn vòng
-                                            Series B thành công với Lorem ipsum
-                                            dolor sit amet consectetur
-                                            adipisicing elit. Error, similique!
-                                        </p>
-                                        <p class="blog__days">
-                                            24 tháng 11, 2021
-                                        </p>
-                                        <a href="#!" class="blog__link"
-                                            >Xem thêm</a
-                                        >
+                                <article class="col-sm-12 col-lg-6 col-md-6">
+                                    <div class="card card-border">
+                                        <a href="#!" class="img-form-xl">
+                                            <img
+                                                src="./assets/img/blog-2.png"
+                                                alt="blog"
+                                                class="card-img"
+                                            />
+                                        </a>
+                                        <div class="card-body">
+                                            <h3 class="card-title line-clamp">
+                                                Phần mềm quản lý bán hàng
+                                                KiotViet gọi vốn thành công 45
+                                                triệu USD
+                                            </h3>
+                                            <p
+                                                class="card-text line-clamp"
+                                                style="--line-clamp: 2"
+                                            >
+                                                Phần mềm quản lý bán hàng
+                                                KiotViet vừa công bố chính thức
+                                                gọi vốn vòng Series B thành công
+                                                với Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Error, similique!
+                                            </p>
+                                            <p class="card-day">
+                                                24 tháng 11, 2021
+                                            </p>
+                                            <a href="#!" class="card-link"
+                                                >Xem thêm</a
+                                            >
+                                        </div>
                                     </div>
                                 </article>
                             </div>
                         </div>
                         <!-- Blog list right -->
-                        <div class="col-lg-8 blog-list__right">
+                        <div class="col-lg-4">
                             <!-- Blog Item 3 -->
-                            <article class="blog-item blog-item-3">
-                                <a href="#!" class="img-form-lg">
-                                    <img
-                                        src="./assets/img/blog-3.png"
-                                        alt="blog"
-                                        class="img-thumb"
-                                    />
-                                </a>
-                                <div class="blog__info">
-                                    <h4 class="blog__news kv-line-clamp">
-                                        KiotViet ra mắt phiên bản phần mềm FnB
-                                        hoàn toàn mới: Công nghệ khác biệt -
-                                        Trải nghiệm mượt mà
-                                    </h4>
+                            <article class="card card-border mb-3">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <a href="#!" class="img-form-lg">
+                                            <img
+                                                src="./assets/img/blog-3.png"
+                                                alt="blog"
+                                                class="card-img"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-7">
+                                        <h4 class="card-title line-clamp">
+                                            KiotViet ra mắt phiên bản phần mềm
+                                            FnB hoàn toàn mới: Công nghệ khác
+                                            biệt - Trải nghiệm mượt mà
+                                        </h4>
+                                    </div>
                                 </div>
                             </article>
                             <!-- Blog Item 4 -->
-                            <article class="blog-item blog-item-3">
-                                <a href="#!" class="img-form-lg">
-                                    <img
-                                        src="./assets/img/blog-4.png"
-                                        alt="blog"
-                                        class="img-thumb"
-                                    />
-                                </a>
-                                <div class="blog__info">
-                                    <h4 class="blog__news kv-line-clamp">
-                                        KiotViet tặng ngay máy bán hàng cảm ứng
-                                        8.500.000đ - Giúp chủ quán tăng chất
-                                        lượng phục vụ mùa cao điểm
-                                    </h4>
+                            <article class="card card-border mb-3">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <a href="#!" class="img-form-lg">
+                                            <img
+                                                src="./assets/img/blog-4.png"
+                                                alt="blog"
+                                                class="card-img"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-7">
+                                        <h4 class="card-title news line-clamp">
+                                            KiotViet tặng ngay máy bán hàng cảm
+                                            ứng 8.500.000đ - Giúp chủ quán tăng
+                                            chất lượng phục vụ mùa cao điểm
+                                        </h4>
+                                    </div>
                                 </div>
                             </article>
                             <!-- Blog Item 5 -->
-                            <article class="blog-item blog-item-3">
-                                <a href="#!" class="img-form-lg">
-                                    <img
-                                        src="./assets/img/blog-5.png"
-                                        alt="blog"
-                                        class="img-thumb"
-                                    />
-                                </a>
-                                <div class="blog__info">
-                                    <h4 class="blog__news kv-line-clamp">
-                                        KiotViet ra mắt phiên bản mới: Phần mềm
-                                        quản lý dành riêng cho Hair salon, Nails
-                                        Massage & Spa
-                                    </h4>
+                            <article class="card card-border mb-3">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <a href="#!" class="img-form-lg">
+                                            <img
+                                                src="./assets/img/blog-5.png"
+                                                alt="blog"
+                                                class="card-img"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-7">
+                                        <h4 class="card-title line-clamp">
+                                            KiotViet ra mắt phiên bản mới: Phần
+                                            mềm quản lý dành riêng cho Hair
+                                            salon, Nails Massage & Spa
+                                        </h4>
+                                    </div>
                                 </div>
                             </article>
                             <!-- Blog Item 6-->
-                            <article class="blog-item blog-item-3">
-                                <a href="#!" class="img-form-lg">
-                                    <img
-                                        src="./assets/img/blog-6.png"
-                                        alt="blog"
-                                        class="img-thumb"
-                                    />
-                                </a>
-                                <div class="blog__info">
-                                    <h4 class="blog__news kv-line-clamp">
-                                        Phần mềm quản lý bán hàng KiotViet gọi
-                                        vốn thành công 45 triệu USD
-                                    </h4>
+                            <article class="card card-border mb-3">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <a href="#!" class="img-form-lg">
+                                            <img
+                                                src="./assets/img/blog-6.png"
+                                                alt="blog"
+                                                class="card-img"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="col-7">
+                                        <h4 class="card-title line-clamp">
+                                            Phần mềm quản lý bán hàng KiotViet
+                                            gọi vốn thành công 45 triệu USD
+                                        </h4>
+                                    </div>
                                 </div>
                             </article>
                         </div>
                     </div>
                     <!-- News -->
-                    <section class="news kv-bg-light-gray">
-                        <h3 class="news__heading">Báo chí viết về KiotViet</h3>
-                        <div class="row kv-flex-center">
-                            <div class="col-20">
-                                <div class="news-list">
+                    <section class="news-box bg-light">
+                        <h3 class="card-heading">Báo chí viết về KiotViet</h3>
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <div class="card-d-between">
                                     <!-- New item  1 -->
-                                    <article class="news-item">
+                                    <article class="card-item">
                                         <a href="">
                                             <img
                                                 src="./assets/img/news-1.png"
@@ -1752,7 +1213,7 @@
                                         </a>
                                     </article>
                                     <!-- New item  2 -->
-                                    <article class="news-item">
+                                    <article class="card-item">
                                         <a href="">
                                             <img
                                                 src="./assets/img/news-2.png"
@@ -1761,7 +1222,7 @@
                                         </a>
                                     </article>
                                     <!-- New item  3 -->
-                                    <article class="news-item">
+                                    <article class="card-item">
                                         <a href="">
                                             <img
                                                 src="./assets/img/news-3.png"
@@ -1770,7 +1231,7 @@
                                         </a>
                                     </article>
                                     <!-- New item  4 -->
-                                    <article class="news-item">
+                                    <article class="card-item">
                                         <a href="">
                                             <img
                                                 src="./assets/img/news-4.png"
@@ -1779,7 +1240,7 @@
                                         </a>
                                     </article>
                                     <!-- New item  5 -->
-                                    <article class="news-item">
+                                    <article class="card-item">
                                         <a href="">
                                             <img
                                                 src="./assets/img/news-5.png"
@@ -1788,7 +1249,7 @@
                                         </a>
                                     </article>
                                     <!-- New item  6 -->
-                                    <article class="news-item">
+                                    <article class="card-item">
                                         <a href="">
                                             <img
                                                 src="./assets/img/news-6.png"
@@ -1803,105 +1264,115 @@
                 </div>
             </section>
             <!-- Support -->
-            <section class="support kv-bg-light-gray">
+            <section class="introduces-box bg-light">
                 <div class="container">
-                    <h2 class="support__heading">
+                    <h2 class="card-heading">
                         Hãy để KiotViet đồng hành kinh doanh cùng bạn
                     </h2>
-                    <div class="support-btn">
-                        <button type="button" class="kv-btn kv-btn-xl kv-btn-success kv-btn-circle">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-lg btn-success">
                             Dùng thử miễn phí
                         </button>
                     </div>
-                    <div class="row support-list">
-                        <div class="col-lg-6 col-md-12 kv-d-flex">
+                    <div class="row mt-5">
+                        <div class="col-lg-3 col-md-6 d-flex">
                             <!-- Item 1 -->
-                            <article class="support-item kv-bg-white">
-                                <div class="support-top">
-                                    <img
-                                        src="./assets/icons/phone.svg"
-                                        alt="phone"
-                                        class="img-sup"
-                                    />
-                                    <h6 class="support__title">Hotline</h6>
+                            <article class="card">
+                                <div class="card-body">
+                                    <div class="card-logo">
+                                        <img
+                                            src="./assets/icons/phone.svg"
+                                            alt="phone"
+                                            class="img-sup"
+                                        />
+                                        <h6 class="card-title">Hotline</h6>
+                                    </div>
+                                    <p class="card-text">
+                                        Tư vấn bán hàng:
+                                        <a
+                                            class="card-phone"
+                                            href="tel:+1800 6162"
+                                            >1800 6162</a
+                                        >
+                                        <br />
+                                        Chăm sóc KH:
+                                        <a
+                                            class="card-phone"
+                                            href="tel:+1900 6522"
+                                            >1900 6522</a
+                                        >
+                                        <br />
+                                        Hoạt động 365 ngày/năm từ 7:00 đến 22:00
+                                        kể cả ngày nghỉ lễ tết.
+                                    </p>
                                 </div>
-                                <p class="support-info">
-                                    Tư vấn bán hàng:
-                                    <a
-                                        class="support-phone "
-                                        href="tel:+1800 6162"
-                                        >1800 6162</a
-                                    >
-                                    <br />
-                                    Chăm sóc KH:
-                                    <a
-                                        class="support-phone"
-                                        href="tel:+1900 6522"
-                                        >1900 6522</a
-                                    >
-                                    <br />
-                                    Hoạt động 365 ngày/năm từ 7:00 đến 22:00 kể
-                                    cả ngày nghỉ lễ tết.
-                                </p>
                             </article>
                         </div>
-                        <div class="col-lg-6 col-md-12 kv-d-flex">
+                        <div class="col-lg-3 col-md-6 d-flex">
                             <!-- Item 2 -->
-                            <article class="support-item kv-bg-white">
-                                <div class="support-top">
-                                    <img
-                                        src="./assets/icons/messenger.svg"
-                                        alt="messenger"
-                                        class="img-sup"
-                                    />
-                                    <h6 class="support__title">
-                                        KiotViet Fanpage
-                                    </h6>
+                            <article class="card">
+                                <div class="card-body">
+                                    <div class="card-logo">
+                                        <img
+                                            src="./assets/icons/messenger.svg"
+                                            alt="messenger"
+                                            class="img-sup"
+                                        />
+                                        <h6 class="card-title">
+                                            KiotViet Fanpage
+                                        </h6>
+                                    </div>
+                                    <p class="card-text">
+                                        Luôn trả lời các thông tin nhanh nhất
+                                        các bạn thông qua các phản hồi trên
+                                        Facebook.
+                                    </p>
                                 </div>
-                                <p class="support-info">
-                                    Luôn trả lời các thông tin nhanh nhất các
-                                    bạn thông qua các phản hồi trên Facebook.
-                                </p>
                             </article>
                         </div>
-                        <div class="col-lg-6 col-md-12 kv-d-flex">
+                        <div class="col-lg-3 col-md-6 d-flex">
                             <!-- Item 3 -->
-                            <article class="support-item kv-bg-white">
-                                <div class="support-top">
-                                    <img
-                                        src="./assets/icons/youtube.svg"
-                                        alt="youtube"
-                                        class="img-sup"
-                                    />
-                                    <h6 class="support__title">
-                                        Kênh hỗ trợ Youtube
-                                    </h6>
+                            <article class="card">
+                                <div class="card-body">
+                                    <div class="card-logo">
+                                        <img
+                                            src="./assets/icons/youtube.svg"
+                                            alt="youtube"
+                                            class="img-sup"
+                                        />
+                                        <h6 class="card-title">
+                                            Kênh hỗ trợ Youtube
+                                        </h6>
+                                    </div>
+                                    <p class="card-text">
+                                        Luôn cập nhật các kiến thức sử dụng phần
+                                        mềm tức thời, trực quan giúp người dùng
+                                        sử dụng được KiotViet dễ dàng và hiệu
+                                        quả nhất.
+                                    </p>
                                 </div>
-                                <p class="support-info">
-                                    Luôn cập nhật các kiến thức sử dụng phần mềm
-                                    tức thời, trực quan giúp người dùng sử dụng
-                                    được KiotViet dễ dàng và hiệu quả nhất.
-                                </p>
                             </article>
                         </div>
-                        <div class="col-lg-6 col-md-12 kv-d-flex">
+                        <div class="col-lg-3 col-md-6 d-flex">
                             <!-- Item 4 -->
-                            <article class="support-item kv-bg-white">
-                                <div class="support-top">
-                                    <img
-                                        src="./assets/icons/chat.svg"
-                                        alt="chat"
-                                        class="img-sup"
-                                    />
-                                    <h6 class="support__title">
-                                        Chat với KiotViet
-                                    </h6>
+                            <article class="card">
+                                <div class="card-body">
+                                    <div class="card-logo">
+                                        <img
+                                            src="./assets/icons/chat.svg"
+                                            alt="chat"
+                                            class="img-sup"
+                                        />
+                                        <h6 class="card-title">
+                                            Chat với KiotViet
+                                        </h6>
+                                    </div>
+                                    <p class="card-text">
+                                        Luôn có người trực chat để trả lời câu
+                                        hỏi của các bạn nhanh và hiệu quả nhất
+                                        suốt 365 ngày/năm.
+                                    </p>
                                 </div>
-                                <p class="support-info">
-                                    Luôn có người trực chat để trả lời câu hỏi
-                                    của các bạn nhanh và hiệu quả nhất suốt 365
-                                    ngày/năm.
-                                </p>
                             </article>
                         </div>
                     </div>
@@ -1909,11 +1380,11 @@
             </section>
         </main>
         <footer class="footer footer-shadow">
-            <div class="container kv-position-relative">
+            <div class="container position-relative">
                 <!-- Footer top -->
                 <div class="row">
                     <!-- Footer Item 1 -->
-                    <div class="col-lg-6 col-md-12 footer-column">
+                    <div class="col-lg-3 col-md-6 footer-column">
                         <h3 class="footer__heading">Doanh nghiệp</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1953,7 +1424,7 @@
                         >
                     </div>
                     <!-- Footer Item 2 -->
-                    <div class="col-lg-6 col-md-12 footer-column">
+                    <div class="col-lg-3 col-md-6 footer-column">
                         <h3 class="footer__heading">Hỗ trợ</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1991,11 +1462,11 @@
                         >
                     </div>
                     <!-- Footer Item 3 & 4 -->
-                    <div class="col-lg-12 footer-column">
+                    <div class="col-lg-6 footer-column">
                         <h3 class="footer__heading">Ngành hàng</h3>
                         <div class="row">
                             <!-- Footer Item 3 -->
-                            <div class="col-lg-12 footer-column">
+                            <div class="col-lg-6 footer-column">
                                 <ul class="footer-list">
                                     <li class="footer-item">
                                         <a href="#!" class="footer-link"
@@ -2041,7 +1512,7 @@
                                 </ul>
                             </div>
                             <!-- Footer 4   -->
-                            <div class="col-lg-12 footer-column">
+                            <div class="col-lg-6 footer-column">
                                 <ul class="footer-list">
                                     <li class="footer-item">
                                         <a href="#!" class="footer-link"
@@ -2085,10 +1556,10 @@
                 </div>
                 <!-- Footer second -->
                 <div class="footer-address">
-                    <h3 class="footer__heading">Địa chỉ Miền Bắc</h3>
+                    <h3 class="footer__heading m-0">Địa chỉ Miền Bắc</h3>
                     <div class="row">
                         <!-- Footer Address 1 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Hà Nội:</li>
                                 <li class="footer-address">
@@ -2105,7 +1576,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 2 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Hải phòng:</li>
                                 <li class="footer-address">
@@ -2122,7 +1593,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 3 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Quảng Ninh:</li>
                                 <li class="footer-address">
@@ -2139,7 +1610,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 4  -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Thái Nguyên:</li>
                                 <li class="footer-address">
@@ -2156,7 +1627,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 5  -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Nam Định:</li>
                                 <li class="footer-address">
@@ -2174,7 +1645,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 6 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Phú Thọ:</li>
                                 <li class="footer-address">
@@ -2191,7 +1662,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 7 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Hải Dương:</li>
                                 <li class="footer-address">
@@ -2209,7 +1680,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 8 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Bắc Ninh:</li>
                                 <li class="footer-address">
@@ -2229,10 +1700,10 @@
                 </div>
                 <!-- Footer third -->
                 <div class="footer-address">
-                    <h3 class="footer__heading">Địa chỉ Miền Trung</h3>
+                    <h3 class="footer__heading m-0">Địa chỉ Miền Trung</h3>
                     <div class="row">
                         <!-- Footer Address 1 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Đà Nẵng:</li>
                                 <li class="footer-address">
@@ -2249,7 +1720,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 2 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Khánh Hòa:</li>
                                 <li class="footer-address">
@@ -2267,7 +1738,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 3 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Nghệ An:</li>
                                 <li class="footer-address">
@@ -2284,7 +1755,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 4  -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Đắk Lắk:</li>
                                 <li class="footer-address">
@@ -2301,7 +1772,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 5  -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Thanh Hóa:</li>
                                 <li class="footer-address">
@@ -2319,7 +1790,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 6 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Thừa Thiên Huế:</li>
                                 <li class="footer-address">
@@ -2336,7 +1807,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 7 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Bình Định:</li>
                                 <li class="footer-address">
@@ -2353,7 +1824,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 8 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Gia Lai:</li>
                                 <li class="footer-address">
@@ -2370,7 +1841,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 9 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Lâm Đồng:</li>
                                 <li class="footer-address">
@@ -2387,7 +1858,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 10 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Bình Thuận:</li>
                                 <li class="footer-address">
@@ -2405,7 +1876,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 11 -->
-                        <div class="col-lg-6 footer-column">
+                        <div class="col-lg-3 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Quảng Ngãi:</li>
                                 <li class="footer-address">
@@ -2428,7 +1899,7 @@
                     <h3 class="footer__heading m-0">Địa chỉ Miền Nam</h3>
                     <div class="row">
                         <!-- Footer Address 1 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">TP.HCM:</li>
                                 <li class="footer-address">
@@ -2438,7 +1909,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 2 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Cần Thơ:</li>
                                 <li class="footer-address">
@@ -2456,7 +1927,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 3 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Vũng Tàu:</li>
                                 <li class="footer-address">
@@ -2473,7 +1944,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 4  -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Kiên Giang:</li>
                                 <li class="footer-address">
@@ -2490,7 +1961,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 5  -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Đồng Tháp:</li>
                                 <li class="footer-address">
@@ -2509,7 +1980,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 6 -->
-                        <div class="col-lg-6 col-md-12 footer-column">
+                        <div class="col-lg-3 col-md-6 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Cà Mau:</li>
                                 <li class="footer-address">
@@ -2526,7 +1997,7 @@
                             </ul>
                         </div>
                         <!-- Footer Address 7 -->
-                        <div class="col-lg-6 footer-column">
+                        <div class="col-lg-3 footer-column">
                             <ul class="footer-list">
                                 <li class="footer-address">Tiền Giang:</li>
                                 <li class="footer-address">
@@ -2579,7 +2050,7 @@
                                     class="icon-media"
                                 />
                             </a>
-                            <a href="#!" class="img-round kv-form-labels-100">
+                            <a href="#!" class="img-round">
                                 <img
                                     src="./assets/icons/youtube2.svg"
                                     alt=""
